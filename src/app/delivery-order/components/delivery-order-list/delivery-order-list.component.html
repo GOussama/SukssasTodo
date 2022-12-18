@@ -1,0 +1,11 @@
+<h2>My delivery orders</h2>
+<app-new-delivery-order></app-new-delivery-order>
+<ul class="orders">
+  <li *ngFor="let deliveryOrder of deliveryOrders" >
+    <button type="button">
+      <span class="badge">{{deliveryOrder.id}}</span>
+      <span class="name">{{deliveryOrder.title}}</span>
+      <span class="name">{{ " : " + deliveryOrder.description}}</span>
+    </button>
+  </li>
+</ul>
